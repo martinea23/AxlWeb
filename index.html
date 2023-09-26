@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axl Martinez Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9d9a242272.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Projects</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Avid Programmer</p>
+                <h1>Hi, im <span>Axl</span> Martinez <br>From Portland, Oregon</h1>
+            </div>
+        </div>
+    </div>
+<!---------------about----------------------->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img id="axlBird"src="images/Axl_birds.JPG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>hfasjkldhfjklasdhfjkladshjklfhajklsdhfjkladshfjklhasdjklhfjkladshfk
+                        dashkjflhalsdkjhflajksdhfkljadhsklfjhadskljhfa
+                        asdhjkfjlhasdljkfhlakjsdhfkljashdfjklfhadjklshfkljasdhf
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br> Designing Web/app interfaces</li>
+                            <li><span>Web development</span><br> Designing Web/app interfaces</li>
+                            <li><span>App development</span><br> Designing Web/app interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>RP Sports</span><br> Designing Web/app interfaces</li>
+                            <li><span>Tech Assistant</span><br> Designing Web/app interfaces</li>
+                            <li><span>Teacher Assistant</span><br> Designing Web/app interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>University of Portland</span><br> Bachleors of Computer Science</li>
+                            <li><span>Central Catholic High School</span><br> graduated with Honors and Spanish excellency award</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------Services------------>
+    <div class="services">
+        <div class="container">
+            <h1>My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>sadhfjklhdfkjldashfklhaskljd</p>
+                    <a href="#">learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>sadhfjklhdfkjldashfklhaskljd</p>
+                    <a href="#">learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>sadhfjklhdfkjldashfklhaskljd</p>
+                    <a href="#">learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----Script for changing tabs in about me---->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabName){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+</html>
