@@ -23,6 +23,7 @@ body {
     padding: 10px 10%;
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 nav {
