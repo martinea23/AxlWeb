@@ -365,6 +365,24 @@ form .btn2{
     .about-col-1, .about-col-2 {
         flex-basis: 100%; /* Make both columns take up 100% width */
     }
-    
+}
 
+@media only screen and (max-width: 1250px){
+    #header{
+        background-image: url(images/axlBackmobile.jpg);
+    }
+    
+    
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 30px;
+        font-weight: 600;
+        color: white;
+    }
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%; /* Make both columns take up 100% width */
+    }
 }
