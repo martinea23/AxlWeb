@@ -77,7 +77,7 @@ nav ul li a:hover::after {
     margin-top: 20px;
 }
 
-.header-text h1 span {
+.header-text  span {
     color: #FFD700;
 }
 
@@ -85,13 +85,15 @@ nav ul li a:hover::after {
 #About {
     padding: 80px 0px;
     color: #ababab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 10px;
-
 }
 
 #axlBird {
@@ -110,60 +112,17 @@ nav ul li a:hover::after {
 .about-col-2 {
     flex-basis: 60%;
     word-wrap: break-word;
+    text-align: center;
 }
 
 .subtitle {
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 600;
     color: white;
 }
 
-/*about me  tab section*/
-.tab-titles {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.tab-links {
-    margin: 5%;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
-
-.tab-links::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #FFD700;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-}
-
-.tab-links.active-link::after {
-    width: 50%;
-}
-
-.tab-contents ul li {
-    list-style: none;
-    margin: 10px 0;
-}
-
-.tab-contents ul li span {
-    color: #FFD700;
-    font-size: 14px;
-}
-
-.tab-contents {
-    display: none;
-}
-
-.tab-contents.active-tab {
-    display: block;
+.abtText {
+    font-size: 30px;
 }
 
 /*Services*/
@@ -211,6 +170,7 @@ nav ul li a:hover::after {
     transform: translateY(-10px);
 }
 
+/*Portfolio*/
 .portfolio {
     padding: 50px 0px;
 }
@@ -281,6 +241,7 @@ nav ul li a:hover::after {
 }
 
 .btn {
+    background-color: #000;
     display: block;
     margin: 50px auto;
     width: fit-content;
@@ -336,6 +297,7 @@ nav ul li a:hover::after {
 .btn.btn2 {
     display: inline-block;
     background: #FFD700;
+    color: #000;
 }
 
 .contact-right form {
@@ -362,16 +324,19 @@ form .btn2 {
     cursor: pointer;
 }
 
+#msg {
+    color: #61b752;
+    display: block;
+    margin-top: -40px;
+}
+
 /**********Mobile CSS*************/
-@media only screen and (max-width: 636px) {
+@media only screen and (max-width: 642px) {
     #header {
         background-image: url(images/axlBackmobile.jpg);
     }
 
-    .header-text {
-        margin-top: 100%;
-        font-size: 16px;
-    }
+    
 
     .header-text h1 {
         font-size: 30px;
@@ -391,12 +356,16 @@ form .btn2 {
         justify-content: center;
         text-align: center;
     }
+
+    .abtText {
+        font-size: 15px;
+    }
 }
 
-/**********Tablet CSS*************/
-@media only screen and (max-width: 1600px) {
-    #header {
-        background-image: url(images/axlBackmobile.jpg);
+/**********big phone CSS*************/
+@media only screen and (min-width: 643px) and (max-width: 900px) {
+    .abtText {
+        font-size: 13px;
     }
 
     .header-text h1 {
@@ -409,14 +378,61 @@ form .btn2 {
         color: white;
     }
 
+    #header {
+        background-image: url(images/axlBackmobile.jpg);
+    }
+
+    .contact-left,
+    .contact-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+/**********Tablet CSS*************/
+@media only screen and (min-width: 900px) and (max-width: 1300px) {
+    #header {
+        background-image: url(images/axlBackmobile.jpg);
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 50px;
+        font-weight: 600;
+        color: white;
+    }
+
     .about-col-1,
     .about-col-2 {
         flex-basis: 100%;
         /* Make both columns take up 100% width */
     }
+
+    .abtText {
+        font-size: 15px;
+    }
 }
-#msg{
-    color: #61b752;
-    display: block;
-    margin-top: -40px;
+
+/**********Screen CSS*************/
+@media only screen and (min-width: 1301px) and (max-width: 1630px) {
+    #header {
+        background-image: url(images/axlBackmobile.jpg);
+    }
+
+    .abtText {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 50px;
+        font-weight: 600;
+        color: white;
+    }
 }
