@@ -90,7 +90,7 @@ nav ul li a:hover::after {
 
 /*About*/
 #About {
-    padding: 80px 0px;
+    padding-top: 40px;
     color: #ababab;
     display: flex;
     justify-content: center;
@@ -178,10 +178,6 @@ nav ul li a:hover::after {
 }
 
 /*Portfolio*/
-.portfolio {
-    padding: 50px 0px;
-}
-
 .work-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -195,8 +191,15 @@ nav ul li a:hover::after {
     overflow: hidden;
 }
 
-.work img {
+.img-cont{
+    height: 533px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.img-cont img {
     width: 100%;
+    height: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -343,10 +346,12 @@ form .btn2 {
         background-image: url(images/axlBackmobile.jpg);
     }
 
+    .btn.btn2.btn3{
+        margin-top: 40vh;
+    }
     
-
     .header-text h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .subtitle {
@@ -367,6 +372,7 @@ form .btn2 {
     .abtText {
         font-size: 15px;
     }
+   
 }
 
 /**********big phone CSS*************/
