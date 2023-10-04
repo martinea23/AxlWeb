@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Axl Martinez</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Styles/Header.css">
+    
     <script src="https://kit.fontawesome.com/9d9a242272.js" crossorigin="anonymous"></script>
 </head>
 
@@ -89,7 +91,7 @@
             <div class="work-list">
                 <div class="work">
                     <div class="img-cont">
-                        <img id="wind" src="images/windTurbine.png">
+                        <img id="wind" src="images/projects/windTurbine.png">
                     </div>
                     <div class="layer">
                         <h3>Wind Tubine</h3>
@@ -99,7 +101,7 @@
                 </div>
                 <div class="work">
                     <div class="img-cont">
-                        <img id="wind" src="images/AR-Webapp.png">
+                        <img id="wind" src="images/projects/AR-Webapp.png">
                     </div>
                     <div class="layer">
                         <h3>AR Web App</h3>
@@ -109,7 +111,7 @@
                 </div>
                 <div class="work">
                     <div class="img-cont">
-                        <img id="wind" src="images/WP-Site_lcrsports.png">
+                        <img id="wind" src="images/projects/WP-Site_lcrsports.png">
                     </div>
                     <div class="layer">
                         <h3>Word Press Website</h3>
@@ -149,24 +151,8 @@
         </div>
     </div>
     <!----Script for Sending me the messages---->
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwYQtMNN44Uqnzl1lIKf5QyZgLMDJ3Bx7Z1XFue8iujlAoDBsreuY0rqkbiHtq69Z2I/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg");
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Message Sent Successfully! Thank You"
-                    setTimeout(function () {
-                        msg.innerHTML = ""
-                    }, 5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
+    <script src="Scripts/menuLightup.js"></script>
+    <script src="Scripts/messageForm.js"></script>
 </body>
 
 </html>
