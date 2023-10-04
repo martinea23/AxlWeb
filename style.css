@@ -8,15 +8,17 @@
 body {
     background-color: black;
     color: #fff;
+    overflow-x: hidden;
 }
 
 #header {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: url(images/axlBack.JPG);
     background-size: cover;
     background-position: center;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 #headerNoBkg {
     width: 100%;
