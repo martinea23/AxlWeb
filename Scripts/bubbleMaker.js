@@ -15,11 +15,11 @@ function updateBubbles() {
     let bubbleCount;
 
     if (screenWidth < 600) {
-        bubbleCount = 10; // Adjust this value for smaller screens
+        bubbleCount = 20; // Adjust this value for smaller screens
     } else if (screenWidth < 1025) {
-        bubbleCount = 20; // Adjust this value for medium-sized screens
+        bubbleCount = 30; // Adjust this value for medium-sized screens
     } else {
-        bubbleCount = 30; // Adjust this value for larger screens
+        bubbleCount = 40; // Adjust this value for larger screens
     }
 
     createBubbles(bubbleCount);
