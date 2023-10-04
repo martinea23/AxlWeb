@@ -9,8 +9,8 @@
 .menuMob{
     display: none;
     font-size: 30px;
-
     align-items: center;
+    margin-inline: 29.11px;
 }
 .logo {
     width: 150px;
