@@ -1,7 +1,7 @@
 var menu = document.getElementsByClassName("menuContainer")[0];
 var lastScrollTop = 0
 window.addEventListener("scroll", function(){
-    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
     
     if (scrollTop > lastScrollTop) {
         // Scrolling down, hide the menuContainer

@@ -146,6 +146,7 @@ nav ul li a:hover {
 
     100% {
         opacity: 0%;
+        display: none;
     }
 }
 
@@ -156,6 +157,7 @@ nav ul li a:hover {
 
     100% {
         opacity: 100%;
+        display: block;
     }
 }
 
