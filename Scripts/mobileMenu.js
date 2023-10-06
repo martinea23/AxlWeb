@@ -15,6 +15,7 @@ window.addEventListener("scroll", function () {
   lastScrollTop = scrollTop;
 })
 
+//this is to prevent the menu from bouncing on mobile and hiding
 window.addEventListener("scroll", function () {
   var scrollTop = window.scrollY || document.documentElement.scrollTop;
 

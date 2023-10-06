@@ -243,10 +243,12 @@ body {
 /*Contact*/
 .contact-left {
     flex-basis: 35%;
+    margin-bottom: 20px;
 }
 
 .contact-right {
     flex-basis: 60%;
+    margin-bottom: 20px;
 }
 
 .contact-left p {
@@ -323,18 +325,6 @@ form .btn2 {
 }
 
 @keyframes bounce {
-    0% , 20%, 50% , 80% ,100% {
-        transform: translateY(0px);
-    }
-    40%{
-        transform: translateY(-30px);
-    }
-    60%{
-        transform: translateY(-15px);
-    }
-}
-
-@keyframes firstBounce {
     0% , 20%, 50% , 80% ,100% {
         transform: translateY(0px);
     }
