@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: black;
+    background-color:black;
     color: #fff;
     overflow-x: hidden;
     margin: 0;
@@ -42,7 +42,7 @@ body {
     animation: slideIn 1s ease-in both;
 }
 .header-text p{ 
-    animation: bounce 1s ease-in-out 1.2s infinite;
+    animation: bounce 1s ease-in-out 1.2s ;
     animation-delay: 3s;
 }
 
@@ -89,6 +89,10 @@ body {
     flex-basis: 60%;
     word-wrap: break-word;
     text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .subtitle {
@@ -98,7 +102,7 @@ body {
 }
 
 .abtText {
-    font-size: 30px;
+    font-size: 60px;
 }
 
 /*Services*/
@@ -167,8 +171,8 @@ body {
 }
 
 .img-cont img {
-    
-    object-fit: cover;
+    width: 555px;
+    height: 555px;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -222,7 +226,7 @@ body {
 .btn {
     background-color: #000;
     display: block;
-    margin: 50px auto;
+    margin: 10px auto;
     width: fit-content;
     border: 1px solid #FFD700;
     padding: 14px 50px;
