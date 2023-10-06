@@ -1,18 +1,27 @@
-//------------------------------Click Listener Section -------------------------------
+//------------------------------hide nav bar Section -------------------------------
 var menu = document.getElementsByClassName("menuContainer")[0];
 var lastScrollTop = 0
-window.addEventListener("scroll", function(){
-    var scrollTop = window.scrollY || document.documentElement.scrollTop;
-    
-    if (scrollTop > lastScrollTop) {
-        // Scrolling down, hide the menuContainer
-        menu.classList.add("hide");
-    } else {
-        // Scrolling up, show the menuContainer
-        menu.classList.remove("hide");
-    }
-    
-    lastScrollTop = scrollTop;
+window.addEventListener("scroll", function () {
+  var scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+    // Scrolling down, hide the menuContainer
+    menu.classList.add("hide");
+  } else {
+    // Scrolling up, show the menuContainer
+    menu.classList.remove("hide");
+  }
+
+  lastScrollTop = scrollTop;
+})
+
+window.addEventListener("scroll", function () {
+  var scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+  if (scrollTop <= 0) {
+    // At the top of the page, always show the menuContainer
+    menu.classList.remove("hide");
+  }
 })
 
 //-------------------------------------HideMenu Section -------------------------------
@@ -44,7 +53,7 @@ function createBubbles(count) {
   for (let i = 0; i < count; i++) {
     const span = document.createElement("span");
     span.style.animationDuration = `${Math.random() * 13 + 10}s`; // Randomize animation duration
-    
+
     bubbleContainer.appendChild(span);
   }
 }
@@ -56,7 +65,7 @@ function updateBubbles() {
 
   if (screenWidth < 340) {
     bubbleCount = 10; // Adjust this value for smaller screens
-  } 
+  }
   else if (screenWidth < 500) {
     bubbleCount = 15; // Adjust this value for medium-sized screens
   }
