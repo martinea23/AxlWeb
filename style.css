@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color:black;
+    background-color:white;
     color: #fff;
     overflow-x: hidden;
     margin: 0;
@@ -15,10 +15,12 @@ body {
     height: 100vh;
     background-image: url(images/axlBack.JPG);
     background-size: cover;
-    background-position: center;
     overflow-x: hidden;
     overflow-y: hidden;
+    background-attachment: fixed;
+    background-position: center;
 }
+
 #headerNoBkg {
     width: 100%;
     background-size: cover;
@@ -39,6 +41,8 @@ body {
     margin-left: 10%;
     font-size: 30px;
     animation: slideIn 1s ease-in both;
+    align-items: center;
+    justify-content: center;
 }
 .header-text p{ 
     animation: bounce 1s ease-in-out 1.2s ;
