@@ -20,7 +20,7 @@ const observer2 = new IntersectionObserver((entries) => {
             entry.target.classList.remove('show2');
         }
     })
-}, {threshold: 0.3}); 
+}); 
 
 const hidden2 = document.querySelectorAll('.hidden2');
 hidden2.forEach((el) => observer2.observe(el));

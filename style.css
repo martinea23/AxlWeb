@@ -15,8 +15,7 @@ body {
     height: 100vh;
     background-image: url(images/axlBack.JPG);
     background-size: cover;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden ;
     background-attachment: fixed;
     background-position: center;
 }
@@ -84,6 +83,9 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 10px;
+    
+    justify-items: center;
+    align-items: center;
 }
 
 #axlBird {
@@ -114,6 +116,7 @@ body {
     font-size: 80px;
     font-weight: 600;
     color: white;
+    text-align: center;
 }
 
 .abtText {
@@ -185,10 +188,14 @@ body {
 }
 
 .proCont {
-    background-color: #000;
     margin-top: 5%;
     padding-top: 5%;
     padding-bottom: 2%;
+    background-image: url(images/bkg.jpg);
+    background-size: cover;
+    overflow: hidden ;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .item {
@@ -213,13 +220,11 @@ body {
 }
 
 .item:nth-child(odd) {
-    border-left: 3px solid #fff;
-    border-top: 3px solid #fff;
+    border: 3px solid;
 }
 
 .item:nth-child(even) {
-    border-right: 3px solid #fff;
-    border-bottom: 3px solid #fff;
+    border: 3px solid;
 }
 
 .item:hover {
@@ -260,6 +265,24 @@ body {
     color: #262626;
 }
 
+.conBtn{
+    background-color: transparent;
+    display: block;
+    width: fit-content;
+    border: 1px solid #FFD700;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #FFF;
+    transition: all 0.5s;
+}
+.conBtn:hover {
+    transform: translateY(-10px);
+    background-color: #FFD700;
+    color: #4b2929;
+    border-color: #4b2929;
+}
+
 /*Contact*/
 .contact {
     margin-bottom: 3%;
@@ -267,29 +290,20 @@ body {
 
 .contact-left {
     flex-basis: 35%;
-    margin-bottom: 20px;
     align-items: center;
+    text-align: center;
 }
 
 .contact-right {
     flex-basis: 60%;
-    margin-bottom: 20px;
 }
 
-.contact-left p {
-    margin-top: 30px;
-}
 
 .contact-left p i {
     color: #FFD700;
     margin-right: 15px;
     font-size: 25px;
 }
-
-.social-icons {
-    margin: 30px;
-}
-
 .social-icons a {
     text-decoration: none;
     font-size: 30px;
@@ -313,33 +327,15 @@ body {
 .contact-right form {
     width: 100%;
 }
-
-form input,
-form textarea {
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px 0;
-    color: #FFF;
-    font-size: 18px;
-    border-radius: 6px;
+.conLab{
+    text-decoration: none;
+    color: #fff;
 }
 
-form .btn2 {
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
+.conLab:hover{
+    color: #FFD700;
+    transform: translateY(-10px);
 }
-
-#msg {
-    color: #61b752;
-    display: block;
-    margin-top: -40px;
-}
-
 /* scroll animation */
 .hidden {
     opacity: 0;
@@ -390,6 +386,7 @@ form .btn2 {
     filter: blur(0);
     transform: translateX(0);
 }
+
 
 @keyframes slideIn {
     0% {
@@ -557,5 +554,12 @@ form .btn2 {
     }
     .serv:nth-child(3){
         transition-delay: 400ms;
+    }
+}
+@media only screen and (min-width: 1800px){
+    #windT {
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
     }
 }
