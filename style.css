@@ -471,6 +471,9 @@ body {
     .proCont {
         background-attachment: scroll;
     }
+    #header {
+        background-attachment: scroll;
+    }
 }
 
 /**********big phone CSS*************/
