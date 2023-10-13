@@ -468,6 +468,9 @@ body {
         display: none;
     }
 
+    .proCont {
+        background-attachment: scroll;
+    }
 }
 
 /**********big phone CSS*************/
