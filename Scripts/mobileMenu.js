@@ -68,7 +68,7 @@ function updateBubbles() {
     bubbleCount = 10; // Adjust this value for smaller screens
   }
   else if (screenWidth < 500) {
-    bubbleCount = 15; // Adjust this value for medium-sized screens
+    bubbleCount = 12; // Adjust this value for medium-sized screens
   }
   else if (screenWidth < 650) {
     bubbleCount = 18; // Adjust this value for medium-sized screens

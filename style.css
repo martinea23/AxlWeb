@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color:#4b2929;
+    background-color: #4b2929;
     color: #fff;
     overflow-x: hidden;
     margin: 0;
@@ -42,7 +42,7 @@ body {
     overflow-y: hidden;
     background-color: #262626;
     border-radius: 25px;
-    margin: 10px 10%;   
+    margin: 10px 10%;
 }
 
 /*Main Text*/
@@ -54,8 +54,9 @@ body {
     align-items: center;
     justify-content: center;
 }
-.header-text p{ 
-    animation: bounce 1s ease-in-out 1.2s ;
+
+.header-text p {
+    animation: bounce 1s ease-in-out 1.2s;
     animation-delay: 3s;
 }
 
@@ -66,7 +67,7 @@ body {
     animation: fadeIn 1s ease-in 1s both;
 }
 
-.header-text  span {
+.header-text span {
     color: #FFD700;
 }
 
@@ -123,12 +124,14 @@ body {
 .services {
     padding: 30px 0px;
 }
-.servHeader{
+
+.servHeader {
     display: flex;
     color: #FFF;
     justify-content: center;
     text-align: center;
 }
+
 .services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -173,14 +176,21 @@ body {
 .projectContainer {
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
-    grid-gap: 40px;
     margin-top: 50px;
     margin: 50px 10%;
     align-items: center;
     justify-items: center;
     position: relative;
-    overflow: hidden;
+    gap: 10px;
 }
+
+.proCont {
+    background-color: #000;
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
 .item {
     display: flex;
     flex-direction: column;
@@ -189,15 +199,40 @@ body {
     padding: 20px;
     border-radius: 5%;
     align-items: center;
-} 
-.item.item2{
-    background-color: blueviolet;
+    transition: 0.5s, transform 0.5s;
 }
-#windT{
+
+.item:nth-child(even):before,
+.item:nth-child(odd):before {
+    content: '';
+    width: 3em;
+    height: 3px;
+    background: #FFF;
+    position: absolute;
+    top: 18%;
+}
+
+.item:nth-child(odd) {
+    border-left: 3px solid #fff;
+    border-top: 3px solid #fff;
+}
+
+.item:nth-child(even) {
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+
+.item:hover {
+    background: #FFD700;
+    transform: translateY(-10px);
+}
+
+#windT {
     border-radius: 50%;
     width: 200px;
     height: 200px;
 }
+
 .middleLine {
     position: absolute;
     top: 0;
@@ -219,12 +254,17 @@ body {
     color: #FFF;
     transition: all 0.5s;
 }
+
 .btn:hover {
     background: #FFD700;
     color: #262626;
 }
 
 /*Contact*/
+.contact {
+    margin-bottom: 3%;
+}
+
 .contact-left {
     flex-basis: 35%;
     margin-bottom: 20px;
@@ -301,45 +341,91 @@ form .btn2 {
 }
 
 /* scroll animation */
-.hidden{
+.hidden {
     opacity: 0;
     transition: all 3s;
     filter: blur(5px);
     transform: translateX(-100%);
 }
 
-.show{
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.hidden2:nth-child(odd) {
+    opacity: 0;
+    transition: all 2s;
+    filter: blur(5px);
+    transform: translateX(100%);
+}
+
+.show2:nth-child(odd) {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.hidden2:nth-child(even) {
+    opacity: 0;
+    transition: all 2s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.show2:nth-child(even) {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.hidden3{
+    opacity: 0;
+    transition: all 2s;
+    filter: blur(5px);
+    transform: translateX(100%);
+}
+.show3{
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
 }
 
 @keyframes slideIn {
-    0%{
+    0% {
         transform: translateX(-300px);
     }
-    100%{
+
+    100% {
         transform: translateX(-0px);
     }
 }
 
 @keyframes bounce {
-    0% , 20%, 50% , 80% ,100% {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
         transform: translateY(0px);
     }
-    40%{
+
+    40% {
         transform: translateY(-30px);
     }
-    60%{
+
+    60% {
         transform: translateY(-15px);
     }
 }
 
 @keyframes fadeIn {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 100;
     }
 }
@@ -349,7 +435,7 @@ form .btn2 {
     #header {
         background-image: url(images/axlBackmobile.jpg);
     }
-    
+
     .header-text h1 {
         font-size: 20px;
     }
@@ -372,7 +458,16 @@ form .btn2 {
     .abtText {
         font-size: 15px;
     }
-   
+
+    .projectContainer {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        overflow: hidden;
+    }
+
+    .nothing {
+        display: none;
+    }
+
 }
 
 /**********big phone CSS*************/
@@ -453,5 +548,14 @@ form .btn2 {
 @media only screen and (min-width: 1630px) and (max-width: 2200px) {
     .abtText {
         font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1040px){
+    .serv:nth-child(2){
+        transition-delay: 200ms;
+    }
+    .serv:nth-child(3){
+        transition-delay: 400ms;
     }
 }
