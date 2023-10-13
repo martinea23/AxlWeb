@@ -15,7 +15,8 @@ body {
     height: 100vh;
     background-image: url(images/axlBack.JPG);
     background-size: cover;
-    overflow: hidden ;
+    overflow-x: hidden;
+    overflow-y: hidden;
     background-attachment: fixed;
     background-position: center;
 }
