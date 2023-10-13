@@ -43,16 +43,16 @@
     </div>
 
     <div id="header">
-        <div class="header-text">
+        <div class="header-text hidden">
             <p>Avid Programmer</p>
             <h1>Hi, I'm <span>Axl</span> Martinez <br>From Oregon</h1>
         </div>
     </div>
 
     <!---------------about----------------------->
-    <div id="About">
-        <div class="container">
-            <div class="row">
+    <div id="About" >
+        <div class="Abtcontainer">
+            <div class="row hidden">
                 <div class="about-col-1">
                     <img id="axlBird" src="images/Axl_birds.JPG">
                 </div>
@@ -70,21 +70,21 @@
     <!-----------Services------------>
     <div class="services">
         <div class="container">
-            <h1>My Services</h1>
+            <h1 class="servHeader">My Services</h1>
             <div class="services-list">
-                <div>
+                <div class="serv hidden">
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
                     <p>Online Presence Through Websites!</p>
                     <a href="#">Learn More</a>
                 </div>
-                <div>
+                <div class="serv hidden">
                     <i class="fa-brands fa-app-store"></i>
                     <h2>App Design</h2>
                     <p>Mobile APP Development</p>
                     <a href="#">Learn More</a>
                 </div>
-                <div>
+                <div class="serv hidden">
                     <i class="fa-solid fa-video"></i>
                     <h2>Video/Photo Editing</h2>
                     <p>Get the Best From Your Content</p>
@@ -94,44 +94,39 @@
         </div>
     </div>
     <!-------------Portfolio------------->
-    <div class="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <div class="img-cont">
-                        <img  src="images/projects/windTurbine.png">
-                    </div>
-                    <div class="layer">
-                        <h3>Wind Tubine</h3>
-                        <p>Self Powered Electric Wind Turbine</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <div class="img-cont">
-                        <img  src="images/projects/AR-Webapp.png">
-                    </div>
-                    <div class="layer">
-                        <h3>AR Web App</h3>
-                        <p>Augmented Reality Data Visualization</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <div class="img-cont">
-                        <img src="images/projects/WP-Site_lcrsports.png">
-                    </div>
-                    <div class="layer">
-                        <h3>Word Press Website</h3>
-                        <p>Website Designed For Client in Word Press</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="./Projects.html" class="btn">See More</a>
+    <h1 class="servHeader">Projects</h1>
+    <div class="projectContainer">
+        <div class="item item1 hidden">
+            <h1>Wind Turbine</h1>
+            <img id="windT" src="images/projects/windTurbine.png"/>
+            <p> dhjsafkl;fhjas ;fhjads ;kljfhjkoadlshfjklads hfjkladsh adfklsh fkljashd flkjadhs 
+                h adsljkfh jkladsh fjkladsh fjkladsh fjkladsh flkjads hfkljadsh fljkadsh fadjkls hfkladjs
+                adhsjkf hadklsjh fadsjh flkjadsh fjkladsh fjkasdh flaksdjh faljksdh fajklsdh ajkdhsf 
+            </p>
         </div>
+        <div class="nothing"></div>
+        <div class="nothing"></div>
+        <div class="item item2 hidden">
+            <h1>AR Webapp</h1>
+            <img id="windT" src="images/projects/AR-Webapp.png"/>
+            <p> dhjsafkl;fhjas ;fhjads ;kljfhjkoadlshfjklads hfjkladsh adfklsh fkljashd flkjadhs 
+                h adsljkfh jkladsh fjkladsh fjkladsh fjkladsh flkjads hfkljadsh fljkadsh fadjkls hfkladjs
+                adhsjkf hadklsjh fadsjh flkjadsh fjkladsh fjkasdh flaksdjh faljksdh fajklsdh ajkdhsf 
+            </p>
+        </div>
+        <div class="item item3 hidden">
+            <h1>Website</h1>
+            <img id="windT" src="images/projects/WP-Site_lcrsports.png"/>
+            <p> dhjsafkl;fhjas ;fhjads ;kljfhjkoadlshfjklads hfjkladsh adfklsh fkljashd flkjadhs 
+                h adsljkfh jkladsh fjkladsh fjkladsh fjkladsh flkjads hfkljadsh fljkadsh fadjkls hfkladjs
+                adhsjkf hadklsjh fadsjh flkjadsh fjkladsh fjkasdh flaksdjh faljksdh fajklsdh ajkdhsf 
+            </p>
+        </div>
+
+
+        <div class="middleLine"></div>
     </div>
+    
     <!-------------Contact------------->
     <div class="contact">
         <div class="container">
@@ -164,6 +159,7 @@
     <script src="Scripts/messageForm.js"></script>
     <script src="Scripts/mobileMenu.js"></script>
     <script src="Scripts/bgMoves.js"></script>
+    <script src="Scripts/Observer.js"></script>
 </body>
 
 </html>
