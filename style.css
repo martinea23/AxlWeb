@@ -531,6 +531,10 @@ body {
 
 /**********Mobile CSS*************/
 @media only screen and (max-width: 642px) {
+    .Conrow {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
     #header {
         background-image: url(images/axlBackmobile.jpg);
     }
