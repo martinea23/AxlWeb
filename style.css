@@ -110,12 +110,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: 30px;
 }
 .eduTittle{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    color: #FFF;
 }
 .eduTittle h1{
     margin: 10px 0;
@@ -141,18 +143,19 @@ body {
 
 .abtText {
     font-size: 60px;
+    text-align: center;
 }
 .education div p{
     margin-left: 10px;
 }
 .deg{
-    font-size: 12px;
+    font-size: 15px;
     margin: 0;
 }
 /* skill section */
 .skills{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit , minmax(250px, 1fr));
     grid-gap: 10px;
     justify-content: center;
     align-items: center;
@@ -256,7 +259,7 @@ body {
 .proCont {
     padding-top: 5%;
     padding-bottom: 2%;
-    background-color:#294b4b ;
+    background-image: url(images/bkg.jpg) ;
     background-size: cover;
     overflow: hidden ;
     background-attachment: fixed;
@@ -540,6 +543,9 @@ body {
     #header {
         background-attachment: scroll;
     }
+    .about-col-2 {
+        font-size: 20px;
+    }
 }
 
 /**********big phone CSS*************/
@@ -570,6 +576,9 @@ body {
         justify-content: center;
         text-align: center;
     }
+    .about-col-2 {
+        font-size: 20px;
+    }
 }
 
 
@@ -592,6 +601,7 @@ body {
     .about-col-1,
     .about-col-2 {
         flex-basis: 100%;
+        font-size: 20px;
         /* Make both columns take up 100% width */
     }
 
@@ -624,6 +634,14 @@ body {
 }
 
 @media only screen and (min-width: 1040px){
+    .skills{
+        display: grid;
+        grid-template-columns: repeat(3 , minmax(250px, 1fr));
+        grid-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
     .serv:nth-child(2){
         transition-delay: 200ms;
     }
