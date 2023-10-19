@@ -407,6 +407,7 @@ body {
     transition: transform(0.5s);
     display: inline-block;
     color: #ababab;
+    margin-bottom: 16px;
 }
 
 .social-icons a:hover {
@@ -487,6 +488,11 @@ body {
     filter: blur(0);
     transform: opacity(100%);
     transform: translateX(0px);
+}
+
+
+.sub-title{
+    animation: bounce 2s ease-in infinite;
 }
 
 
@@ -576,7 +582,7 @@ body {
     }
 
     .proCont {
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
 
     #header {
