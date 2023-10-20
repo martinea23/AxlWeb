@@ -495,7 +495,9 @@ body {
     animation: bounce 2s ease-in infinite;
 }
 
-
+.porContain{
+    
+}
 @keyframes slideIn {
     0% {
         transform: translateX(-300px);
@@ -677,7 +679,7 @@ body {
 
 @media only screen and (min-width: 1630px) and (max-width: 2200px) {
     .abtText {
-        font-size: 20px;
+        font-size: 25px;
     }
 }
 
