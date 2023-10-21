@@ -377,6 +377,21 @@ body {
     border-color: #4b2929;
 }
 
+
+#skillUsed{
+    height: 30px;
+    width: 30px;
+    margin-inline: 5px;
+}
+.skillUsedCon{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.proContain{
+    text-decoration: none;
+    color: #FFF;
+}
 /*Contact*/
 .contact {
     padding: 3% 0;
@@ -495,9 +510,6 @@ body {
     animation: bounce 2s ease-in infinite;
 }
 
-.porContain{
-    
-}
 @keyframes slideIn {
     0% {
         transform: translateX(-300px);
