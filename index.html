@@ -20,7 +20,7 @@
                 <li><a href="#About">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="./Contact">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <a href="images/RESUME.pdf" download class="resumeDown">Resume &nbsp; <i
                     class="fa-solid fa-download"></i></a>
@@ -30,10 +30,10 @@
     <div class="mobMenuCont">
         <ul>
             <li><a href="./" class="active">Home</a></li>
-            <li><a href="./About">About</a></li>
-            <li><a href="./Projects">Projects</a></li>
-            <li><a href="./Career">Career</a></li>
-            <li><a href="./Contact">Contact</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Career</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <a href="images/RESUME.pdf" download class="resumeDownMob">Resume &nbsp; <i class="fa-solid fa-download"></i>
         </a>
@@ -201,7 +201,8 @@
                         <img id="skillUsed" src="images/Logos/arduino.png" />
                     </div>
                     <p>
-                        Developed a clean energy prototype by utilizing 3D printing technology to fabricate a wind turbine-like structure.  
+                        Developed a clean energy prototype by utilizing 3D printing technology to fabricate a wind
+                        turbine-like structure.
                         This innovative project showcases a sustainable approach to clean energy generation.
                     </p>
                 </div>
@@ -221,7 +222,8 @@
                         <img id="skillUsed" src="images/Logos/aframe.png">
                     </div>
                     <p>
-                        A web application that allowed data to be seen in augmented reality, later on incorporated into a 
+                        A web application that allowed data to be seen in augmented reality, later on incorporated into
+                        a
                         bigger project.
                     </p>
                 </div>
@@ -237,8 +239,8 @@
                         <img id="skillUsed" src="images/Logos/wp.png" />
                     </div>
                     <p>
-                        Collaborated closely with a small sports business client to craft a website 
-                        that perfectly aligned with their vision and needs. 
+                        Collaborated closely with a small sports business client to craft a website
+                        that perfectly aligned with their vision and needs.
                     </p>
                 </div>
             </a>
@@ -271,7 +273,7 @@
                     </div>
                     <p>
                         A simple recreation of the famous space invader game. This included a functioning
-                        Scoreboard and difficulty would increase with time. 
+                        Scoreboard and difficulty would increase with time.
                     </p>
                 </div>
             </a>
@@ -290,7 +292,8 @@
                     </div>
                     <p>
                         Worked through the design and creation for a prototype of a "smart" ball
-                        capable to display real time data about the ball including speed and the force the ball was striken with.
+                        capable to display real time data about the ball including speed and the force the ball was
+                        striken with.
                     </p>
                 </div>
             </a>
@@ -339,12 +342,37 @@
             </div>
         </div>
     </div>
+
+    <!-----------Message Form------------>
+    <div class="msgFormCont" id="contact">
+        <div class="msgForm">
+            <div class="msgHead">
+                <h1 class="sub-title">Message Me</h1>
+            </div>
+            <form name="submit-to-google-sheet" class="msgformstuff">
+                <div class="sec">
+                    <p>Name:</p>
+                    <input type="text" name="Name" placeholder="Cristiano Ronaldo" required class="tbox">
+                    <p>Email:</p>
+                    <input type="email" name="Email" placeholder="myemail@gmail.com" required class="tbox">
+                </div>
+                <div class="sec">
+                    <p>Message:</p>
+                    <textarea name="Message" rows="3" placeholder="Your Message" class="tArea" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+
+
     <!-------------Contact------------->
     <div class="contact">
         <div class="container">
             <div class="Conrow">
                 <div class="contact-left">
-                    <h1 class="sub-title"><a href="/Contact" class="conLab">Contact Me</a></h1>
+                    <h1 class="sub-title"><a href="#contact" class="conLab">Contact Me</a></h1>
                     <p><i class="fa-solid fa-paper-plane"></i> Mtzaxl23@gmail.com</p>
                 </div>
                 <div class="social-icons">
@@ -363,6 +391,7 @@
     <script src="Scripts/mobileMenu.js"></script>
     <script src="Scripts/bgMoves.js"></script>
     <script src="Scripts/Observer.js"></script>
+    <script src="Scripts/messageForm.js"></script>
 </body>
 
 </html>

@@ -379,30 +379,77 @@ body {
 }
 
 
-#skillUsed{
+#skillUsed {
     height: 30px;
     width: 30px;
     margin-inline: 5px;
 }
-.skillUsedCon{
+
+.skillUsedCon {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
 }
-.proContain{
+
+.proContain {
     text-decoration: none;
     color: #FFF;
 }
 
-#showcase{
+#showcase {
     width: 200px;
     height: 400px;
     border-radius: 5%;
 }
+
 /*Contact*/
+.msgForm {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #262626;
+    margin: 30px 10%;
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+.msgHead {
+    text-align: center;
+}
+
+.msgformstuff {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr);
+    grid-gap: 10px;
+    background-color: transparent;
+    align-items: center;
+    justify-items: center;
+}
+
+.tbox {
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    resize: none;
+    margin: 0px 10%;
+}
+.tArea {
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    resize: none;
+    width: auto;
+    margin-left: 10%;
+}
+
 .contact {
     padding: 3% 0;
     background-color: #4b2929;
+}
+.sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .contact-left {
@@ -513,7 +560,7 @@ body {
 }
 
 
-.sub-title{
+.sub-title {
     animation: bounce 2s ease-in infinite;
 }
 
