@@ -225,6 +225,7 @@ body {
 .servHeader {
     display: flex;
     color: #FFF;
+    text-shadow: #262626 2px 0px 10px;
     justify-content: center;
     text-align: center;
 }
@@ -331,7 +332,16 @@ body {
     width: 200px;
     height: 200px;
 }
-
+#pdx{
+    width: 300px;
+    height: 200px;
+    border-radius: 5%;
+}
+#wp{
+    height: 200px;
+    width: 250px;
+    border-radius: 5%;
+}
 .middleLine {
     position: absolute;
     top: 0;
@@ -401,6 +411,12 @@ body {
     height: 400px;
     border-radius: 5%;
 }
+#space{
+    height: 400px;
+    width: 200px;
+    border-radius: 5%;
+}
+
 
 /*Contact*/
 .msgForm {
