@@ -2,6 +2,9 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 body {
     background-color: #000;
@@ -266,7 +269,7 @@ body {
 }
 
 .services-list div:hover {
-    background: #FFD700;
+    background: #294B4B;
     transform: translateY(-10px);
 }
 
@@ -338,8 +341,8 @@ body {
     border-radius: 5%;
 }
 #wp{
-    height: 200px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     border-radius: 5%;
 }
 .middleLine {
@@ -418,15 +421,22 @@ body {
 }
 
 
-/*Contact*/
+/*Message Form*/
+.msgFormCont{
+    background-image: url(/images/conback.jpg);
+    background-size: cover;
+    padding-block: 10px;
+}
 .msgForm {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #262626;
-    margin: 30px 10%;
+    margin: 0px 10%;
     overflow: hidden;
     border-radius: 5%;
 }
-
+.divider{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+}
 .msgHead {
     text-align: center;
 }
@@ -454,20 +464,25 @@ body {
     color: #FFF;
     font-size: 16px;
     resize: none;
-    width: auto;
-    margin-left: 10%;
-}
-
-.contact {
-    padding: 3% 0;
-    background-color: #4b2929;
+    margin: 0px 10%;
+    width: 225px;
 }
 .sec{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+.contact {
+    padding: 3% 0;
+    background-color: #4b2929;
+}
+.icon{
+    align-self: center;
+    margin-right: 10px;
+}
 
+
+/*Bottom Contact*/
 .contact-left {
     flex-basis: 35%;
     align-items: center;
@@ -676,6 +691,12 @@ body {
 
     .about-col-2 {
         font-size: 20px;
+    }
+    .divider{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .contImg{
+        width: 400px;
     }
 }
 
