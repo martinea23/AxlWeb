@@ -88,3 +88,20 @@ function updateBubbles() {
 // Call the updateBubbles function on page load and when the window is resized
 window.addEventListener("load", updateBubbles);
 window.addEventListener("resize", updateBubbles);
+
+// close after a pick
+
+document.addEventListener("DOMContentLoaded", function () {
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  const menuItems = mobileMenu.querySelectorAll("ul li a");
+
+  // Add a click event listener to each menu item
+  menuItems.forEach((menuItem) => {
+    menuItem.addEventListener("click", function () {
+      // Hide the mobile menu by setting the right property back to -110%
+      mobileMenu.style.right = "-110%";
+      document.body.style.overflow = "auto"; // Enable scrolling
+    });
+  });
+});
